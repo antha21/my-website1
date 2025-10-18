@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Portfolio</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Roboto&display=swap" rel="stylesheet">
+<style>
+    body { font-family: 'Roboto', Arial, sans-serif; scroll-behavior: smooth; margin:0; }
+    nav.navbar { box-shadow: 0 4px 8px rgba(0,0,0,0.3); background: linear-gradient(90deg, #0f2027, #203a43, #2c5364); }
+    nav.navbar .nav-link { font-weight: 600; color: #fff; transition: color 0.3s; }
+    nav.navbar .nav-link:hover { color: #ff6f61; }
+
+    section { display: none; padding: 120px 0; transition: opacity 0.5s ease-in-out; }
+    section.active { display: block; opacity: 1; }
+
+    /* Section Colors & Gradients */
+    #home { background: linear-gradient(135deg, #ff5f6d, #ffc371); color: #fff; text-align: center; }
+    #about { background: linear-gradient(135deg, #6a11cb, #2575fc); color: #fff; }
+    #projects { background: linear-gradient(135deg, #43cea2, #185a9d); color: #fff; }
+    #contact { background: linear-gradient(135deg, #ff9966, #ff5e62); color: #fff; }
+    #extra { background: linear-gradient(135deg, #f7971e, #ffd200); color: #fff; }
+
+    /* Buttons */
+    .btn-primary {
+        background: #ff6f61;
+        border: none;
+        font-weight: 700;
+        font-size: 1.1rem;
+        transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .btn-primary:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 12px 20px rgba(0,0,0,0.4);
+    }
+
+    /* Card hover effect */
+    .card {
+        border-radius: 15px;
+        overflow: hidden;
+        transition: transform 0.3s, box-shadow 0.3s;
+        background: rgba(255,255,255,0.1);
+        backdrop-filter: blur(10px);
+        color: #fff;
+    }
+    .card:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 16px 25px rgba(0,0,0,0.5);
+    }
+    .card-img-top { height: 200px; object-fit: cover; }
+
+    footer { background: #111; color: white; padding: 20px 0; text-align: center; }
+
+    /* Typography */
+    h1, h2, h5 { font-family: 'Montserrat', sans-serif; font-weight: 700; text-shadow: 1px 1px 5px rgba(0,0,0,0.4); }
+    p, li { font-size: 1.15rem; }
+    ul { list-style: none; padding: 0; }
+    ul li { margin-bottom: 12px; }
+
+    form input, form textarea { border-radius: 12px; padding: 12px; }
+</style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="#" onclick="showSection('home')" style="color: #fff; font-family: 'Montserrat', sans-serif; font-weight: 900; font-size: 1.8rem; text-shadow: 2px 2px 8px rgba(0,0,0,0.5);">
+    Anthony Artino
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#" onclick="showSection('home')">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#" onclick="showSection('about')">About Me</a></li>
+        <li class="nav-item"><a class="nav-link" href="#" onclick="showSection('projects')">Projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="#" onclick="showSection('contact')">Contact</a></li>
+        <li class="nav-item"><a class="nav-link" href="#" onclick="showSection('extra')">Extras</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+
+
+<!-- Home Section -->
+<section id="home" class="active">
+    <div class="container-fluid d-flex flex-row flex-wrap" style="min-height: 100vh; padding-top: 5px;">
+
+        <!-- Left Column: Large PNG with Lighter Overlay & Dark Outline -->
+        <div style="flex: 1; min-width: 300px; position: relative; display: flex; justify-content: center; align-items: center; overflow: hidden;
+                    border: 3px solid rgba(0,0,0,0.6); border-radius: 20px; margin: 10px;">
+            <img src="C:\Users\anthp\Pictures\Screenshots\Screenshot 2025-10-14 164447.png" alt="Resume Image" 
+                 style="width: 95%; max-width: 500px; border-radius: 20px; box-shadow: 0 10px 25px rgba(0,0,0,0.3); transform: scale(1); transition: transform 0.3s;">
+            <div style="position: absolute; top:0; left:0; width:100%; height:100%; 
+                        background: linear-gradient(180deg, rgba(255,255,255,0.1), rgba(255,255,255,0.1)); 
+                        border-radius: 20px;"></div>
+        </div>
+
+        <!-- Right Column: Text Content Box with Lighter Tone & Dark Outline -->
+        <div style="flex: 1; min-width: 300px; 
+                    background: rgba(255,255,255,0.2); backdrop-filter: blur(20px); 
+                    padding: 50px; border-radius: 20px; color:#fff; display: flex; flex-direction: column; justify-content: center; 
+                    box-shadow: 0 10px 30px rgba(0,0,0,0.4); border: 3px solid rgba(0,0,0,0.6); margin: 10px;">
+
+            <!-- Greeting -->
+            <h1 class="mb-3" style="font-size: 2.5rem; animation: fadeIn 1s;">Hello Everyone! My name is Anthony Artino</h1>
+
+            <!-- Intro Text -->
+            <p class="lead mb-4" style="line-height:1.6; animation: fadeIn 1.2s;">
+                Welcome to my professional portfolio. Explore my skills, projects, and journey as a passionate developer and designer.
+            </p>
+
+            <hr style="border: 1px solid rgba(255,255,255,0.3); width: 50%; margin: 20px 0;">
+
+            <!-- Academic Background -->
+            <p style="margin-bottom: 15px; animation: fadeIn 1.4s;">
+                I am a senior at Alaska State University, majoring in Applied Mathematics with a dual concentration in Probability & Statistics and Financial Mathematics, and a minor in Computer Science and Digital Media Production.
+            </p>
+            <p style="margin-bottom: 15px; animation: fadeIn 1.6s;">
+                My academic journey has helped me build a strong foundation in data analysis, quantitative modeling, and financial systems. I’ve developed proficiency in tools like Python, MATLAB, R Studio, and Excel, which I’ve applied to both academic projects and independent studies. You can learn more about my academic background on the Resume.
+            </p>
+
+            <!-- Work & Experience -->
+            <p style="margin-bottom: 15px; animation: fadeIn 1.8s;">
+                Outside of the classroom, I work two part-time jobs as an Office Assistant and an IT Assistant in the Department of Mathematical Sciences Building at Alaska State. I have also previously enrolled in a research seminar on mathematical modeling, where I collaborate on reports and deliver presentations. You can explore some of my work on <strong><a href="#" onclick="showSection('projects')" style="color:#fff; text-decoration: underline;">Projects</a></strong>.
+            </p>
+
+            <!-- Call to Action -->
+            <p style="margin-bottom: 20px; animation: fadeIn 2s;">
+                Feel free to reach out via <strong><a href="#" onclick="showSection('contact')" style="color:#fff; text-decoration: underline;">Contact</a></strong>, especially if you'd like to connect or collaborate.
+            </p>
+
+            <!-- Button -->
+            <div>
+                <button class="btn btn-primary btn-lg" style="transition: transform 0.3s, box-shadow 0.3s;" 
+                    onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 12px 25px rgba(0,0,0,0.5)';" 
+                    onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 8px 15px rgba(0,0,0,0.4)';"
+                    onclick="showSection('projects')">
+                    See My Work
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <style>
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</section>
+
+
+
+
+
+
+
+<!-- About Section -->
+<section id="about">
+    <div class="container text-center d-flex flex-column justify-content-start align-items-center" style="height: 100vh; padding-top: 100px;">
+        <h2 class="mb-4">About Me</h2>
+        <p class="lead mb-4" style="max-width: 700px;">I’m [Your Name], a professional web developer and creative designer. I specialize in building visually stunning and highly functional web experiences. My mission is to blend <strong>creativity and technology</strong> seamlessly for users to enjoy.</p>
+        <ul class="mt-3 text-start" style="max-width: 600px;">
+            <li>🎓 Education: Computer Science Major at [University]</li>
+            <li>💻 Skills: HTML, CSS, JavaScript, Bootstrap, React, UX/UI Design</li>
+            <li>🛠 Experience: Internships, freelance projects, and team collaborations</li>
+            <li>🎨 Hobbies: Creative coding, design experimentation, storytelling, gaming</li>
+        </ul>
+    </div>
+</section>
+
+
+<!-- Projects Section -->
+<section id="projects">
+    <div class="container">
+        <h2 class="text-center mb-5">Projects</h2>
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="images/project1.jpg" class="card-img-top" alt="Project 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Interactive Web App</h5>
+                        <p class="card-text">A responsive, modern web app with smooth animations and professional UI design.</p>
+                        <a href="#" class="btn btn-outline-light btn-sm">View Project</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="images/project2.jpg" class="card-img-top" alt="Project 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Portfolio Redesign</h5>
+                        <p class="card-text">Showcases advanced CSS, interactive components, and creative visual storytelling.</p>
+                        <a href="#" class="btn btn-outline-light btn-sm">View Project</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="images/project3.jpg" class="card-img-top" alt="Project 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Team Collaboration App</h5>
+                        <p class="card-text">A full-stack project emphasizing teamwork, clean code, and modern architecture.</p>
+                        <a href="#" class="btn btn-outline-light btn-sm">View Project</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact">
+    <div class="container">
+        <h2 class="text-center mb-4">Contact Me</h2>
+        <form class="mx-auto" style="max-width: 600px;">
+            <div class="mb-3">
+                <label>Name</label>
+                <input type="text" class="form-control" placeholder="Your Name" required>
+            </div>
+            <div class="mb-3">
+                <label>Email</label>
+                <input type="email" class="form-control" placeholder="you@example.com" required>
+            </div>
+            <div class="mb-3">
+                <label>Message</label>
+                <textarea class="form-control" rows="5" placeholder="Write your message here..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary w-100">Send</button>
+        </form>
+    </div>
+</section>
+
+<!-- Extras Section -->
+<section id="extra">
+    <div class="container text-center d-flex flex-column justify-content-start align-items-center" style="height: 100vh; padding-top: 80px;">
+        <h2 class="mb-4">Extras</h2>
+        <ul class="list-unstyled" style="font-size: 1.2rem;">
+            <li>🔗 <a href="https://github.com/yourusername" style="color:#fff;">GitHub Repositories</a></li>
+            <li>📄 <a href="files/CV.pdf" style="color:#fff;">Download My CV</a></li>
+            <li>✍️ <a href="#" style="color:#fff;">Read My Blog</a></li>
+        </ul>
+    </div>
+</section>
+
+
+<footer>
+    &copy; 2025 Anthony Artino. All rights reserved.
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+    function showSection(id) {
+        const sections = document.querySelectorAll('section');
+        sections.forEach(sec => sec.classList.remove('active'));
+        const selected = document.getElementById(id);
+        selected.classList.add('active');
+        selected.style.opacity = 0;
+        let opacity = 0;
+        const fade = setInterval(() => {
+            if(opacity >= 1) clearInterval(fade);
+            selected.style.opacity = opacity;
+            opacity += 0.05;
+        }, 20);
+        window.scrollTo({top: 0, behavior: 'smooth'});
+    }
+</script>
+</body>
+</html>
