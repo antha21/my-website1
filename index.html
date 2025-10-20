@@ -63,11 +63,12 @@
 </head>
 <body>
 
+
 <!-- Navbar -->
 <nav class="navbar navbar-expand-lg fixed-top">
   <div class="container">
     <a class="navbar-brand" href="#" onclick="showSection('home')" style="color: #fff; font-family: 'Montserrat', sans-serif; font-weight: 900; font-size: 1.8rem; text-shadow: 2px 2px 8px rgba(0,0,0,0.5);">
-    Anthony Artino
+      Anthony Artino
     </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
       <span class="navbar-toggler-icon"></span>
@@ -76,6 +77,8 @@
       <ul class="navbar-nav ms-auto">
         <li class="nav-item"><a class="nav-link" href="#" onclick="showSection('home')">Home</a></li>
         <li class="nav-item"><a class="nav-link" href="#" onclick="showSection('about')">About Me</a></li>
+        <!-- New Resume Tab -->
+        <li class="nav-item"><a class="nav-link" href="#" onclick="showSection('resume')">Resume</a></li>
         <li class="nav-item"><a class="nav-link" href="#" onclick="showSection('projects')">Projects</a></li>
         <li class="nav-item"><a class="nav-link" href="#" onclick="showSection('contact')">Contact</a></li>
         <li class="nav-item"><a class="nav-link" href="#" onclick="showSection('extra')">Extras</a></li>
@@ -87,60 +90,49 @@
 
 
 
-<!-- Home Section -->
-<section id="home" class="active">
-    <div class="container-fluid d-flex flex-row flex-wrap" style="min-height: 100vh; padding-top: 5px;">
 
-        <!-- Left Column: Large PNG with Lighter Overlay & Dark Outline -->
-        <div style="flex: 1; min-width: 300px; position: relative; display: flex; justify-content: center; align-items: center; overflow: hidden;
-                    border: 3px solid rgba(0,0,0,0.6); border-radius: 20px; margin: 10px;">
-            <img src="C:\Users\anthp\Pictures\Screenshots\Screenshot 2025-10-14 164447.png" alt="Resume Image" 
-                 style="width: 95%; max-width: 500px; border-radius: 20px; box-shadow: 0 10px 25px rgba(0,0,0,0.3); transform: scale(1); transition: transform 0.3s;">
-            <div style="position: absolute; top:0; left:0; width:100%; height:100%; 
-                        background: linear-gradient(180deg, rgba(255,255,255,0.1), rgba(255,255,255,0.1)); 
-                        border-radius: 20px;"></div>
+
+
+
+<!-- Home Section -->
+<section id="home" class="active" style="position: relative; overflow: hidden; min-height: 90vh; color: white;">
+
+    <!-- Animated Mathematical Background -->
+    <div class="math-bg">
+        <div class="math-grid">
+            <div class="symbol">∑</div><div class="symbol">π</div><div class="symbol">√</div><div class="symbol">∫</div>
+            <div class="symbol">∞</div><div class="symbol">θ</div><div class="symbol">λ</div><div class="symbol">μ</div>
+            <div class="symbol">Φ</div><div class="symbol">Δ</div><div class="symbol">∂</div><div class="symbol">≈</div>
+            <div class="symbol">Ω</div><div class="symbol">ψ</div><div class="symbol">φ</div><div class="symbol">∇</div>
+            <div class="symbol">α</div><div class="symbol">β</div><div class="symbol">γ</div><div class="symbol">δ</div>
+            <div class="symbol">⊕</div><div class="symbol">⊗</div><div class="symbol">⊥</div><div class="symbol">≤</div>
+            <div class="symbol">≥</div><div class="symbol">≠</div><div class="symbol">∝</div><div class="symbol">∫</div>
+            <div class="symbol">∮</div><div class="symbol">⊂</div><div class="symbol">⊃</div><div class="symbol">∈</div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container-fluid d-flex flex-row flex-wrap justify-content-center align-items-center" style="min-height: 90vh; padding: 20px; position: relative; z-index: 2;">
+
+        <!-- Left Box (Image) -->
+        <div class="home-box left-box">
+            <img src="C:\Users\anthp\Downloads\IMG_20230204_150030_461.jpg" alt="Portfolio Image">
         </div>
 
-        <!-- Right Column: Text Content Box with Lighter Tone & Dark Outline -->
-        <div style="flex: 1; min-width: 300px; 
-                    background: rgba(255,255,255,0.2); backdrop-filter: blur(20px); 
-                    padding: 50px; border-radius: 20px; color:#fff; display: flex; flex-direction: column; justify-content: center; 
-                    box-shadow: 0 10px 30px rgba(0,0,0,0.4); border: 3px solid rgba(0,0,0,0.6); margin: 10px;">
+        <!-- Right Box (Text) -->
+        <div class="home-box right-box">
+            <h1 class="mb-3">Hello Everyone!</h1>
 
-            <!-- Greeting -->
-            <h1 class="mb-3" style="font-size: 2.5rem; animation: fadeIn 1s;">Hello Everyone! My name is Anthony Artino</h1>
-
-            <!-- Intro Text -->
-            <p class="lead mb-4" style="line-height:1.6; animation: fadeIn 1.2s;">
-                Welcome to my professional portfolio. Explore my skills, projects, and journey as a passionate developer and designer.
+            <p class="lead mb-4">
+                My name is Bill Simms, and I am currently a senior attending Kent State University. I am majoring in Applied Mathematics with a double concentration in Probability & Statistics and Financial Mathematics, as well as a minor in Computer Science and Digital Media Production. When it comes to my hobbies, I like looking into mathematical research, creating fun videos with friends, and solving Rubik's cubes.
             </p>
 
-            <hr style="border: 1px solid rgba(255,255,255,0.3); width: 50%; margin: 20px 0;">
-
-            <!-- Academic Background -->
-            <p style="margin-bottom: 15px; animation: fadeIn 1.4s;">
-                I am a senior at Alaska State University, majoring in Applied Mathematics with a dual concentration in Probability & Statistics and Financial Mathematics, and a minor in Computer Science and Digital Media Production.
-            </p>
-            <p style="margin-bottom: 15px; animation: fadeIn 1.6s;">
-                My academic journey has helped me build a strong foundation in data analysis, quantitative modeling, and financial systems. I’ve developed proficiency in tools like Python, MATLAB, R Studio, and Excel, which I’ve applied to both academic projects and independent studies. You can learn more about my academic background on the Resume.
-            </p>
-
-            <!-- Work & Experience -->
-            <p style="margin-bottom: 15px; animation: fadeIn 1.8s;">
-                Outside of the classroom, I work two part-time jobs as an Office Assistant and an IT Assistant in the Department of Mathematical Sciences Building at Alaska State. I have also previously enrolled in a research seminar on mathematical modeling, where I collaborate on reports and deliver presentations. You can explore some of my work on <strong><a href="#" onclick="showSection('projects')" style="color:#fff; text-decoration: underline;">Projects</a></strong>.
-            </p>
-
-            <!-- Call to Action -->
-            <p style="margin-bottom: 20px; animation: fadeIn 2s;">
-                Feel free to reach out via <strong><a href="#" onclick="showSection('contact')" style="color:#fff; text-decoration: underline;">Contact</a></strong>, especially if you'd like to connect or collaborate.
-            </p>
-
-            <!-- Button -->
             <div>
-                <button class="btn btn-primary btn-lg" style="transition: transform 0.3s, box-shadow 0.3s;" 
-                    onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 12px 25px rgba(0,0,0,0.5)';" 
-                    onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 8px 15px rgba(0,0,0,0.4)';"
-                    onclick="showSection('projects')">
+                <button class="btn btn-primary btn-lg"
+                        style="transition: transform 0.3s, box-shadow 0.3s;"
+                        onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 12px 25px rgba(0,0,0,0.5)';" 
+                        onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 8px 15px rgba(0,0,0,0.4)';"
+                        onclick="showSection('projects')">
                     See My Work
                 </button>
             </div>
@@ -148,9 +140,124 @@
     </div>
 
     <style>
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(20px); }
-            to { opacity: 1; transform: translateY(0); }
+        /* Background Style */
+        .math-bg {
+            position: absolute;
+            top:0; left:0;
+            width:100%; height:100%;
+            z-index:1;
+            background: linear-gradient(135deg, #1a2a6c, #b21f1f, #fdbb2d);
+            overflow: hidden;
+        }
+
+        .math-grid {
+            display: grid;
+            grid-template-columns: repeat(8, 1fr);
+            grid-template-rows: repeat(5, 1fr);
+            width: 100%;
+            height: 100%;
+            place-items: center;
+        }
+
+        .symbol {
+            font-size: 1.9rem;
+            font-weight: bold;
+            color: rgba(0, 255, 255, 0.6);
+            text-shadow: 0 0 10px rgba(0,255,255,0.8), 0 0 25px rgba(0,100,255,0.6);
+            animation: moveDiagonal 15s linear infinite alternate;
+        }
+
+        @keyframes moveDiagonal {
+            0%   { transform: translate(0%, 0%); }
+            100% { transform: translate(150%, 150%); }
+        }
+
+        /* Home Boxes */
+        .home-box {
+            flex: 1 1 380px;      /* slightly smaller to reduce page height */
+            max-width: 420px;
+            height: 470px;        /* slightly smaller */
+            margin: 10px;
+            border-radius: 20px;
+            border: 3px solid rgba(0,0,0,0.6);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background: rgba(255,255,255,0.08);
+        }
+
+        .home-box img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .right-box {
+            flex-direction: column;
+            background: rgba(255,255,255,0.18);
+            backdrop-filter: blur(20px);
+            padding: 25px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2.3rem;
+        }
+
+        p.lead {
+            font-size: 1rem;
+            line-height: 1.5;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .container-fluid {
+                flex-direction: column;
+                padding: 15px;
+            }
+
+            .home-box {
+                width: 90%;
+                max-width: none;
+                height: 420px;
+            }
+
+            .right-box {
+                padding: 20px;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            .symbol {
+                font-size: 1.5rem;
+            }
+
+            p.lead {
+                font-size: 0.95rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.7rem;
+            }
+
+            .symbol {
+                font-size: 1.2rem;
+            }
+
+            p.lead {
+                font-size: 0.85rem;
+            }
+
+            .home-box {
+                height: 380px;
+            }
         }
     </style>
 </section>
@@ -161,53 +268,405 @@
 
 
 
+
+
+
 <!-- About Section -->
-<section id="about">
-    <div class="container text-center d-flex flex-column justify-content-start align-items-center" style="height: 100vh; padding-top: 100px;">
-        <h2 class="mb-4">About Me</h2>
-        <p class="lead mb-4" style="max-width: 700px;">I’m [Your Name], a professional web developer and creative designer. I specialize in building visually stunning and highly functional web experiences. My mission is to blend <strong>creativity and technology</strong> seamlessly for users to enjoy.</p>
-        <ul class="mt-3 text-start" style="max-width: 600px;">
-            <li>🎓 Education: Computer Science Major at [University]</li>
-            <li>💻 Skills: HTML, CSS, JavaScript, Bootstrap, React, UX/UI Design</li>
-            <li>🛠 Experience: Internships, freelance projects, and team collaborations</li>
-            <li>🎨 Hobbies: Creative coding, design experimentation, storytelling, gaming</li>
-        </ul>
+<section id="about" style="position: relative; min-height: 100vh; font-family: 'Montserrat', sans-serif; color: #fff; overflow: hidden; padding: 80px 0;">
+
+    <!-- Floating Formula Background -->
+    <div class="formula-bg" style="position: absolute; top:0; left:0; width:100%; height:100%; z-index:1; overflow:hidden; background: linear-gradient(135deg, #00c6ff 0%, #0072ff 50%, #00d4ff 100%);">
+
+        <!-- Existing Formulas -->
+        <span class="formula" style="top:10%; left:5%; color: rgba(255,255,255,0.4);">∂u/∂t = α ∂²u/∂x²</span>
+        <span class="formula" style="top:25%; left:20%; color: rgba(255,200,200,0.4);">y'' + p(x)y' + q(x)y = f(x)</span>
+        <span class="formula" style="top:40%; left:35%; color: rgba(200,255,150,0.4);">P(A∩B) = P(A)·P(B|A)</span>
+        <span class="formula" style="top:55%; left:50%; color: rgba(255,150,200,0.4);">f_X(x) = d/dx F_X(x)</span>
+        <span class="formula" style="top:70%; left:65%; color: rgba(150,200,255,0.4);">∂²ψ/∂x² + ∂²ψ/∂y² = 0</span>
+        <span class="formula" style="top:85%; left:70%; color: rgba(255,255,150,0.4);">Var(X) = E[X²] - (E[X])²</span>
+
+        <!-- Additional PDE Formulas -->
+        <span class="formula" style="top:15%; left:60%; color: rgba(255,180,180,0.4);">∂²u/∂t² = c² ∂²u/∂x²</span>
+        <span class="formula" style="top:35%; left:10%; color: rgba(180,255,180,0.4);">∂u/∂t + u ∂u/∂x = ν ∂²u/∂x²</span>
+
+        <!-- Additional ODE Formulas -->
+        <span class="formula" style="top:20%; left:80%; color: rgba(180,180,255,0.4);">y' = λ y</span>
+        <span class="formula" style="top:50%; left:30%; color: rgba(255,255,180,0.4);">y'' + ω²y = 0</span>
+
+        <!-- Additional Statistics Formulas -->
+        <span class="formula" style="top:60%; left:15%; color: rgba(200,255,255,0.4);">Cov(X,Y) = E[XY] - E[X]E[Y]</span>
+        <span class="formula" style="top:80%; left:35%; color: rgba(255,200,255,0.4);">σ² = Σ(xᵢ - μ)² / n</span>
+
+        <!-- Additional Stochastic Processes Formulas -->
+        <span class="formula" style="top:30%; left:70%; color: rgba(200,200,255,0.4);">dX_t = μX_t dt + σX_t dW_t</span>
+        <span class="formula" style="top:75%; left:50%; color: rgba(255,150,255,0.4);">M_t = exp(σ W_t - ½ σ² t)</span>
+
     </div>
+
+    <!-- Main Container -->
+    <div class="container d-flex flex-wrap justify-content-center align-items-start" style="position: relative; z-index:2; gap:40px;">
+
+        <!-- Text Box -->
+        <div style="flex: 2; min-width: 350px; max-width: 700px; 
+                    background: linear-gradient(145deg, #1c6fc1, #3399ff);
+                    padding: 50px; border-radius: 25px; 
+                    box-shadow: 0 20px 40px rgba(0,0,0,0.6); 
+                    border: 2px solid rgba(255,255,255,0.4);
+                    line-height: 1.9; font-size: 1.1rem;">
+
+            <h2 style="font-size:2.5rem; margin-bottom: 30px; font-family: 'Georgia', serif; text-shadow: 2px 2px 8px rgba(0,0,0,0.6);">
+                About Me
+            </h2>
+
+            <p style="margin-bottom: 25px;">
+                Throughout my academic journey, I have developed a strong foundation in <strong>data analysis, financial modeling, and quantitative skills</strong>. My coursework in <strong>Probability & Statistics</strong> has sharpened my ability to analyze and interpret data, while my studies in <strong>Financial Mathematics</strong> have deepened my understanding of financial systems and modeling. I am proficient in coding languages such as <strong>Python, MATLAB, R Studio, and Excel</strong>, which I have applied to both academic and personal projects, enhancing my analytical capabilities.
+            </p>
+
+            <p style="margin-bottom: 25px;">
+                My commitment to academic excellence is reflected in my dedication to mastering my schoolwork and achieving top grades. Attention to detail and consistent effort have always been my priorities. Earning a place on both the <strong>Dean’s and President’s Lists</strong> throughout my academic journey is a testament to the hard work and dedication I invest in achieving my goals.
+            </p>
+
+            <p style="margin-bottom: 25px;">
+                Regarding my <strong>minor in Digital Media Production</strong>, I am skilled in photography and video production using a Canon camera to capture high-quality images, as well as creating full-length videos. I edit and enhance content using <strong>Adobe Premiere Pro</strong> and <strong>Photoshop</strong>, enabling me to produce professional-grade media. This skill allows me to communicate complex ideas visually and engage effectively in both academic and professional contexts.
+            </p>
+
+            <p style="margin-bottom: 0;">
+                In addition to my academic achievements, I hold two part-time positions at <strong>Kent State University, Department of Mathematical Sciences</strong> as an <strong>Office Assistant</strong> and <strong>IT Assistant</strong>. I manage the front desk, handle Excel reports, book classrooms, organize files and documents, and monitor computer systems. I also participated in a research seminar on <strong>mathematical modeling</strong>, producing analytical reports and live presentations. I am eager to apply my academic knowledge and practical experience in professional settings.
+            </p>
+
+        </div>
+
+        <!-- Image -->
+        <div style="flex: 1; min-width: 250px; max-width: 350px; display: flex; justify-content: center; align-items: center;
+                    border-radius: 20px; overflow: hidden; box-shadow: 0 15px 30px rgba(0,0,0,0.5); background: rgba(255,255,255,0.05);">
+            <img src="C:\Users\anthp\Downloads\A_Arti_F25.jpg" alt="Anthony Artino" style="width: 100%; height: 100%; object-fit: cover; border-radius: 20px;">
+        </div>
+
+    </div>
+
 </section>
+
+<style>
+/* Floating formulas animation */
+.formula-bg .formula {
+    position: absolute;
+    font-size: 2rem;
+    font-weight: bold;
+    animation: floatDiag 40s linear infinite;
+}
+
+@keyframes floatDiag {
+    0% { transform: translate(0,0) rotate(0deg); opacity: 0.7; }
+    50% { transform: translate(-200px, -200px) rotate(15deg); opacity: 0.9; }
+    100% { transform: translate(0,0) rotate(0deg); opacity: 0.7; }
+}
+</style>
+
+
+
+
+
+
+
+
+
+
+<!-- Resume Section -->
+<section id="resume" style="position: relative; overflow: hidden; min-height: 100vh; color: #fff; padding: 50px 0; font-family: 'Montserrat', sans-serif;">
+
+   <!-- Background -->
+   <div class="edu-bg" style="position: absolute; top:0; left:0; width:100%; height:100%; z-index:1; overflow:hidden; background: linear-gradient(135deg, #0d1f2d, #1a3a5a, #0d1f2d);">
+       <!-- Floating formulas -->
+
+       <!-- Greek Letters -->
+       <span class="formula">α</span><span class="formula">β</span><span class="formula">γ</span>
+       <span class="formula">δ</span><span class="formula">ε</span><span class="formula">ζ</span>
+       <span class="formula">η</span><span class="formula">θ</span><span class="formula">ι</span>
+       <span class="formula">κ</span><span class="formula">λ</span><span class="formula">μ</span>
+       <span class="formula">ν</span><span class="formula">ξ</span><span class="formula">ο</span>
+       <span class="formula">π</span><span class="formula">ρ</span><span class="formula">σ</span>
+       <span class="formula">τ</span><span class="formula">υ</span><span class="formula">φ</span>
+       <span class="formula">χ</span><span class="formula">ψ</span><span class="formula">ω</span>
+       <span class="formula">Φ</span><span class="formula">Θ</span><span class="formula">Δ</span>
+       <span class="formula">Σ</span><span class="formula">Ω</span><span class="formula">Π</span>
+
+       <!-- Math Operators -->
+       <span class="formula">+</span><span class="formula">−</span><span class="formula">×</span>
+       <span class="formula">÷</span><span class="formula">=</span><span class="formula">≠</span>
+       <span class="formula">≈</span><span class="formula">∝</span><span class="formula">∞</span>
+       <span class="formula">√</span><span class="formula">∑</span><span class="formula">∏</span>
+       <span class="formula">∫</span><span class="formula">∂</span><span class="formula">∇</span>
+       <span class="formula">∴</span><span class="formula">∵</span><span class="formula">±</span>
+
+       <!-- Set Theory / Logic -->
+       <span class="formula">∈</span><span class="formula">∉</span><span class="formula">⊂</span>
+       <span class="formula">⊃</span><span class="formula">⊆</span><span class="formula">⊇</span>
+       <span class="formula">∪</span><span class="formula">∩</span><span class="formula">∅</span>
+       <span class="formula">⊕</span><span class="formula">⊗</span><span class="formula">⊥</span>
+       <span class="formula">→</span><span class="formula">←</span><span class="formula">↔</span>
+       <span class="formula">⇌</span>
+   </div>
+
+   <!-- Main Container -->
+   <div class="container-fluid d-flex flex-column align-items-center" style="position: relative; z-index: 2;">
+
+       <!-- Header -->
+       <h1 class="mb-5" style="font-size: 3rem; text-align: center; text-shadow: 2px 2px 8px rgba(0,0,0,0.6); margin-top: 90px;">
+           My Resume
+       </h1>
+
+       <!-- EDUCATION Card -->
+       <div class="resume-card blue-card">
+           <div class="card-header">🎓 Education</div>
+           <div class="card-content">
+               <div class="school">
+                   <h4>Kent State University — Kent, OH</h4>
+                   <p><strong>Bachelor of Science in Applied Mathematics</strong> (Expected: December 2025)</p>
+                   <p>Cumulative GPA: 3.841</p>
+                   <p>Concentrations: Probability & Statistics and Financial Mathematics</p>
+                   <p>Minors: Computer Science and Digital Media Production</p>
+                   <p>Awards: Dean's List (2) & President’s List (5) consecutive semesters</p>
+               </div>
+               <div class="school mt-3">
+                   <p><strong>Master of Science in Applied Mathematics</strong> (Expected: May 2027)</p>
+               </div>
+           </div>
+       </div>
+
+       <!-- SKILLS Card -->
+       <div class="resume-card green-card">
+           <div class="card-header">🛠️ Skills</div>
+           <div class="card-content">
+               <p><strong>Tools & Technologies:</strong> Excel (Advanced), Tableau, R, Python, C++, MATLAB, Oracle SQL</p>
+               <p><strong>Functions:</strong> XLOOKUP, PivotTables, IF/AND/OR statements, conditional formatting, data validation</p>
+               <p><strong>Analytics:</strong> Data analysis, cleaning, management, dashboard design, storytelling, A/B testing, AI, academic writing, calculus</p>
+               <p><strong>Soft Skills:</strong> Leadership, communication, intercultural teamwork, problem-solving, project management</p>
+           </div>
+       </div>
+
+       <!-- WORK EXPERIENCE Card -->
+       <div class="resume-card yellow-card">
+           <div class="card-header">💼 Work Experience</div>
+           <div class="card-content">
+               <div class="job">
+                   <h4>Podium Education | Evaluation Specialist | Part-Time</h4>
+                   <p>September 2025 - Present</p>
+                   <ul>
+                       <li>Evaluated over 200 weekly Data Analytics participants’ Excel and Tableau projects.</li>
+                   </ul>
+               </div>
+               <div class="job mt-3">
+                   <h4>The Global Career Accelerator | Data Analyst Trainee | Remote</h4>
+                   <p>May 2025 - Present</p>
+                   <ul>
+                       <li>Conducted Excel analysis with PivotTables and visualizations.</li>
+                       <li>Created dashboards and reports in Tableau.</li>
+                       <li>Analyzed A/B test results to make data-driven business recommendations.</li>
+                       <li>Aggregated unstructured data from multiple sources for streamlined analysis.</li>
+                       <li>Collaborated with a diverse global team to deliver accurate projects on time.</li>
+                   </ul>
+               </div>
+               <div class="job mt-3">
+                   <h4>Office & IT Assistant | Department of Mathematical Sciences, Kent State University</h4>
+                   <p>February 2025 - Present</p>
+                   <ul>
+                       <li>Managed front desk operations and provided administrative/IT support.</li>
+                       <li>Handled Excel reports for data entry, tracking, and analysis.</li>
+                       <li>Scheduled classrooms and coordinated faculty/student needs.</li>
+                       <li>Organized files and documents for efficient record-keeping.</li>
+                       <li>Answered and directed incoming calls to appropriate personnel.</li>
+                   </ul>
+               </div>
+           </div>
+       </div>
+
+       <!-- CERTIFICATIONS Card -->
+       <div class="resume-card red-card">
+           <div class="card-header">📜 Certifications</div>
+           <div class="card-content">
+               <ul>
+                   <li>AI Professional Skills Certification — August 2025</li>
+                   <li>Data Visualization Certification — August 2025</li>
+                   <li>Intercultural Skills Certification — August 2025</li>
+                   <li>Data Analysis Skills Certification — July 2025</li>
+                   <li>Six Sigma Yellow & White Belt — June 2025</li>
+                   <li>Anaconda Python for Data Science Professional Certificate — May 2025</li>
+                   <li>Career Essentials in Data Analysis & Generative AI — May 2025</li>
+                   <li>OpenEDG Python Programming Professional Certificate — May 2025</li>
+                   <li>Statistics Foundations Professional Certificate — May 2025</li>
+               </ul>
+           </div>
+       </div>
+
+   </div>
+</section>
+
+<style>
+/* Book-like Resume Cards */
+.resume-card {
+    width: 90%;
+    max-width: 900px;
+    margin-bottom: 50px;
+    padding: 40px;
+    border-radius: 15px;
+    border: 3px solid rgba(0,0,0,0.6);
+    backdrop-filter: blur(15px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.5);
+    background: rgba(255,255,255,0.1);
+    transition: transform 0.3s ease-in-out;
+    position: relative;
+}
+
+/* Book Header with Icon */
+.card-header {
+    font-size: 1.8rem;
+    font-weight: 700;
+    text-shadow: 1px 1px 5px rgba(0,0,0,0.4);
+    border-bottom: 2px solid rgba(255,255,255,0.6);
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Card Content */
+.card-content p, .card-content ul { 
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.card-content ul { padding-left: 20px; }
+
+.resume-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Individual Section Colors (books) */
+.blue-card { background: rgba(0,123,255,0.15); border-left: 10px solid #007bff; }
+.green-card { background: rgba(40,167,69,0.15); border-left: 10px solid #28a745; }
+.yellow-card { background: rgba(255,193,7,0.15); border-left: 10px solid #ffc107; }
+.red-card { background: rgba(220,53,69,0.15); border-left: 10px solid #dc3545; }
+
+/* Floating background formulas */
+.edu-bg span.formula {
+    position: absolute;
+    font-size: 2rem;
+    font-weight: bold;
+    pointer-events: none;
+    animation: floatDiag 25s linear infinite alternate;
+    color: rgba(255,255,255,0.15);
+}
+
+/* Left-side formulas (mostly left edge) */
+.edu-bg span.formula:nth-child(1)  { top: 5%;  left: 5%;  animation-delay: -4s; }
+.edu-bg span.formula:nth-child(2)  { top: 15%; left: 10%; animation-delay: -3.5s; }
+.edu-bg span.formula:nth-child(3)  { top: 24%; left: 5%;  animation-delay: -3s; }
+.edu-bg span.formula:nth-child(4)  { top: 35%; left: 12%; animation-delay: -2.5s; }
+.edu-bg span.formula:nth-child(5)  { top: 45%; left: 8%;  animation-delay: -2s; }
+.edu-bg span.formula:nth-child(6)  { top: 50%; left: 15%; animation-delay: -1.5s; }
+.edu-bg span.formula:nth-child(7)  { top: 65%; left: 10%; animation-delay: -1s; }
+.edu-bg span.formula:nth-child(8)  { top: 75%; left: 12%; animation-delay: -0.5s; }
+.edu-bg span.formula:nth-child(9)  { top: 85%; left: 5%;  animation-delay: 0s; }
+.edu-bg span.formula:nth-child(10) { top: 95%; left: 15%; animation-delay: 0.5s; }
+
+/* Right-side formulas (mostly right edge) */
+.edu-bg span.formula:nth-child(11) { top: 10%; left: 90%; animation-delay: -4s; }
+.edu-bg span.formula:nth-child(12) { top: 20%; left: 92%; animation-delay: -3.5s; }
+.edu-bg span.formula:nth-child(13) { top: 30%; left: 88%; animation-delay: -3s; }
+.edu-bg span.formula:nth-child(14) { top: 40%; left: 95%; animation-delay: -2.5s; }
+.edu-bg span.formula:nth-child(15) { top: 50%; left: 85%; animation-delay: -2s; }
+.edu-bg span.formula:nth-child(16) { top: 60%; left: 90%; animation-delay: -1.5s; }
+.edu-bg span.formula:nth-child(17) { top: 70%; left: 92%; animation-delay: -1s; }
+.edu-bg span.formula:nth-child(18) { top: 83%; left: 88%; animation-delay: -0.5s; }
+.edu-bg span.formula:nth-child(19) { top: 90%; left: 95%; animation-delay: 0s; }
+.edu-bg span.formula:nth-child(20) { top: 95%; left: 85%; animation-delay: 0.5s; }
+
+/* Mix of left & right for variety */
+.edu-bg span.formula:nth-child(21) { top: 12%; left: 5%;  animation-delay: -10s; }
+.edu-bg span.formula:nth-child(22) { top: 18%; left: 95%; animation-delay: -10.5s; }
+.edu-bg span.formula:nth-child(23) { top: 28%; left: 8%;  animation-delay: -11s; }
+.edu-bg span.formula:nth-child(24) { top: 33%; left: 92%; animation-delay: -11.5s; }
+.edu-bg span.formula:nth-child(25) { top: 40%; left: 12%; animation-delay: -12s; }
+.edu-bg span.formula:nth-child(26) { top: 48%; left: 88%; animation-delay: -12.5s; }
+.edu-bg span.formula:nth-child(27) { top: 55%; left: 15%; animation-delay: -13s; }
+.edu-bg span.formula:nth-child(28) { top: 63%; left: 85%; animation-delay: -13.5s; }
+.edu-bg span.formula:nth-child(29) { top: 70%; left: 10%; animation-delay: -14s; }
+.edu-bg span.formula:nth-child(30) { top: 78%; left: 90%; animation-delay: -14.5s; }
+
+/* Remaining symbols (31+) automatically smaller and faint */
+.edu-bg span.formula:nth-child(n+31) { font-size: 1.5rem; color: rgba(255,255,255,0.1); }
+
+/* Float Animation */
+@keyframes floatDiag {
+    0%   { transform: translate(0,0) rotate(0deg); }
+    25%  { transform: translate(30px,-20px) rotate(10deg); }
+    50%  { transform: translate(-20px,-40px) rotate(-10deg); }
+    75%  { transform: translate(20px,-60px) rotate(15deg); }
+    100% { transform: translate(-30px,-80px) rotate(-15deg); }
+}
+</style>
+
+
+
+
+
 
 
 <!-- Projects Section -->
-<section id="projects">
-    <div class="container">
-        <h2 class="text-center mb-5">Projects</h2>
-        <div class="row">
-            <div class="col-md-4 mb-4">
-                <div class="card">
-                    <img src="images/project1.jpg" class="card-img-top" alt="Project 1">
-                    <div class="card-body">
-                        <h5 class="card-title">Interactive Web App</h5>
-                        <p class="card-text">A responsive, modern web app with smooth animations and professional UI design.</p>
-                        <a href="#" class="btn btn-outline-light btn-sm">View Project</a>
+<section id="projects" style="position: relative; overflow: hidden; padding: 150px 0; background: #f5f5dc;">
+    <!-- Spiral background -->
+    <canvas id="projects-bg" style="position:absolute; top:0; left:0; width:100%; height:100%; z-index:1;"></canvas>
+
+    <div class="container" style="position: relative; z-index: 2; text-align: center;">
+        <!-- Animated Projects title -->
+        <h2 id="projects-title" class="projects-title">Projects</h2>
+
+        <!-- Palette container for responsive scaling -->
+        <div class="palette-container">
+            <!-- Artist palette background -->
+            <div class="palette-bg">
+                <!-- Sample project cards with PDF links -->
+                <div class="palette-card" style="top:30px; left:50px; background: linear-gradient(145deg, #ff3d00, #ffb74d);">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Diving into the Depths</h5>
+                        <p class="card-text">Scuba diving dynamics with MATLAB.</p>
+                        <a href="C:\Users\anthp\OneDrive\Documents\Kent State\Jupyterlab and TeX documents\ScubaDivingProject.pdf" class="btn btn-view" target="_blank">View</a>
                     </div>
                 </div>
-            </div>
-            <div class="col-md-4 mb-4">
-                <div class="card">
-                    <img src="images/project2.jpg" class="card-img-top" alt="Project 2">
-                    <div class="card-body">
-                        <h5 class="card-title">Portfolio Redesign</h5>
-                        <p class="card-text">Showcases advanced CSS, interactive components, and creative visual storytelling.</p>
-                        <a href="#" class="btn btn-outline-light btn-sm">View Project</a>
+                <div class="palette-card" style="top:100px; left:200px; background: linear-gradient(145deg, #00e676, #1de9b6);">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Ant Behavior Simulation</h5>
+                        <p class="card-text">Simulated ant foraging using Python.</p>
+                        <a href="file:///C:/Users/anthp/OneDrive/Documents/Kent%20State/Jupyterlab%20and%20TeX%20documents/Ant%20Movements.pdf" class="btn btn-view" target="_blank">View</a>
                     </div>
                 </div>
-            </div>
-            <div class="col-md-4 mb-4">
-                <div class="card">
-                    <img src="images/project3.jpg" class="card-img-top" alt="Project 3">
-                    <div class="card-body">
-                        <h5 class="card-title">Team Collaboration App</h5>
-                        <p class="card-text">A full-stack project emphasizing teamwork, clean code, and modern architecture.</p>
-                        <a href="#" class="btn btn-outline-light btn-sm">View Project</a>
+                <div class="palette-card" style="top:180px; left:350px; background: linear-gradient(145deg, #2979ff, #536dfe);">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Cellular Automaton</h5>
+                        <p class="card-text">Open-field animal foraging simulation in Python.</p>
+                        <a href="C:\Users\anthp\Downloads\Cellular Automation Simulation of Open-Field Foraging with Area-Restricted Search.pdf" class="btn btn-view" target="_blank">View</a>
+                    </div>
+                </div>
+                <div class="palette-card" style="top:60px; left:500px; background: linear-gradient(145deg, #d500f9, #ea80fc);">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Treasure Hunt</h5>
+                        <p class="card-text">ArcGIS interactive maps of 1982 treasure hunt.</p>
+                        <a href="https://www.arcgis.com/home/item.html?id=8e86bf2eea124a93853c797c2fb0b5e4" class="btn btn-view" target="_blank">View</a>
+                    </div>
+                </div>
+                <div class="palette-card" style="top:200px; left:650px; background: linear-gradient(145deg, #ffea00, #ffd740);">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Grammys.com Analysis</h5>
+                        <p class="card-text">Evaluated user engagement metrics and visualized traffic spikes.</p>
+                        <a href="C:\Users\anthp\Pictures\Screenshots\Screenshot 2025-08-07 131500.png" class="btn btn-view" target="_blank">View</a>
+                    </div>
+                </div>
+                <div class="palette-card" style="top:120px; left:800px; background: linear-gradient(145deg, #00bfa5, #00e5ff);">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Intel Data Center</h5>
+                        <p class="card-text">Interactive dashboards for energy data analysis.</p>
+                        <a href="C:\Users\anthp\Pictures\Screenshots\Screenshot 2025-08-07 135553.png" class="btn btn-view" target="_blank">View</a>
                     </div>
                 </div>
             </div>
@@ -215,39 +674,693 @@
     </div>
 </section>
 
+<style>
+.projects-title {
+    font-family: 'Baloo 2', cursive;
+    font-size: 5rem;
+    font-weight: 900;
+    text-align: center;
+    text-shadow: 2px 2px 3px #000, -2px -2px 3px #000;
+    margin-bottom: 60px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.letter {
+    display: inline-block;
+    position: relative;
+    transition: transform 1s ease-in-out, color 1s ease;
+}
+
+.palette-container {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+}
+
+/* SCALE PALETTE FOR TABLETS/PHONES */
+@media only screen and (max-width: 768px) {
+    .palette-container {
+        transform: scale(0.6);
+        transform-origin: top center;
+        margin-left: -170px; /* move more left */
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .palette-container {
+        transform: scale(0.45);
+        transform-origin: top center;
+    }
+}
+
+.palette-bg {
+    position: relative;
+    width: 900px;
+    height: 400px;
+    margin: 0 auto;
+    background: #d2b48c; /* wooden palette */
+    border-radius: 55% 45% 60% 40% / 50% 60% 40% 50%; /* organic shape */
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    border: 5px solid #333; /* dark outline */
+}
+
+.palette-card {
+    position: absolute;
+    width: 180px;
+    min-height: 200px;
+    border-radius: 50% / 40%;
+    border: 3px solid #000;
+    color: #fff;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.35);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 15px;
+    font-family: 'Montserrat', sans-serif;
+    transition: transform 0.5s ease, box-shadow 0.3s ease;
+}
+.palette-card:hover {
+    transform: scale(1.1) rotate(5deg);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.5);
+}
+.palette-card .card-title { font-size: 1rem; font-weight: 700; margin-bottom: 8px; }
+.palette-card .card-text { font-size: 0.85rem; line-height: 1.4; text-align: center; }
+.btn-view {
+    display: inline-block;
+    padding: 6px 14px;
+    font-weight: 600;
+    font-size: 0.85rem;
+    border-radius: 6px;
+    border: 2px solid #fff;
+    background-color: rgba(255,255,255,0.1);
+    color: #fff;
+    text-decoration: none;
+    margin: 0 auto;
+    transition: all 0.3s ease;
+}
+.btn-view:hover { background-color: #fff; color: #004d40; transform: scale(1.05); }
+</style>
+
+<script>
+// Spiral background
+const canvas = document.getElementById('projects-bg');
+const ctx = canvas.getContext('2d');
+canvas.width = window.innerWidth;
+canvas.height = window.innerHeight;
+
+class Spiral {
+    constructor() {
+        this.x = Math.random()*canvas.width;
+        this.y = Math.random()*canvas.height;
+        this.angle = Math.random()*Math.PI*2;
+        this.radius = Math.random()*60+40;
+        this.speed = Math.random()*0.005+0.003;
+        this.color = `hsl(${Math.random()*360},100%,55%)`;
+        this.size = Math.random()*3+2;
+    }
+    update() {
+        this.angle += this.speed;
+        this.radius += 0.03;
+        this.draw();
+    }
+    draw() {
+        const px = this.x+Math.cos(this.angle)*this.radius;
+        const py = this.y+Math.sin(this.angle)*this.radius;
+        ctx.beginPath();
+        ctx.arc(px,py,this.size,0,Math.PI*2);
+        ctx.fillStyle = this.color;
+        ctx.fill();
+    }
+}
+
+let spirals=[]; for(let i=0;i<150;i++) spirals.push(new Spiral());
+function animate(){ 
+    ctx.fillStyle='rgba(245,245,220,0.05)'; 
+    ctx.fillRect(0,0,canvas.width,canvas.height); 
+    spirals.forEach(s=>s.update()); 
+    requestAnimationFrame(animate); 
+}
+animate();
+window.addEventListener('resize',()=>{canvas.width=window.innerWidth;canvas.height=window.innerHeight;});
+
+// PROJECTS TITLE ANIMATION
+const title = document.getElementById('projects-title');
+
+// Wrap each letter
+function wrapLetters() {
+    const text = title.innerText;
+    title.innerHTML = '';
+    for(let i=0;i<text.length;i++){
+        const span = document.createElement('span');
+        span.innerText = text[i];
+        span.className='letter';
+        title.appendChild(span);
+    }
+}
+wrapLetters();
+
+// Explosion effect
+let exploded=false;
+title.addEventListener('click', () => {
+    if(exploded) return;
+    exploded=true;
+    const letters = document.querySelectorAll('.letter');
+    letters.forEach(letter=>{
+        const dx=(Math.random()-0.5)*500;
+        const dy=(Math.random()-0.5)*300;
+        const rot=(Math.random()*720-360);
+        letter.style.transform=`translate(${dx}px,${dy}px) rotate(${rot}deg)`;
+    });
+    setTimeout(()=>{
+        letters.forEach(letter=>{
+            letter.style.transform='translate(0,0) rotate(0deg)';
+        });
+        setTimeout(()=>{exploded=false;},1000);
+    },1000);
+});
+
+// Cycling colors + outline
+function animateLetterColors(){
+    const letters=document.querySelectorAll('.letter');
+    letters.forEach((letter,i)=>{
+        const hue=(performance.now()*0.03+i*40)%360;
+        letter.style.color=`hsl(${hue},100%,50%)`;
+        letter.style.webkitTextStroke='1px #000';
+        letter.style.textStroke='1px #000';
+    });
+    requestAnimationFrame(animateLetterColors);
+}
+animateLetterColors();
+</script>
+
+
+
+
+
+
+
+
+
+
+
 <!-- Contact Section -->
-<section id="contact">
-    <div class="container">
-        <h2 class="text-center mb-4">Contact Me</h2>
-        <form class="mx-auto" style="max-width: 600px;">
-            <div class="mb-3">
-                <label>Name</label>
-                <input type="text" class="form-control" placeholder="Your Name" required>
-            </div>
-            <div class="mb-3">
-                <label>Email</label>
-                <input type="email" class="form-control" placeholder="you@example.com" required>
-            </div>
-            <div class="mb-3">
-                <label>Message</label>
-                <textarea class="form-control" rows="5" placeholder="Write your message here..." required></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary w-100">Send</button>
+<section id="contact" class="py-5" style="background: linear-gradient(135deg, #7b2ff7, #f107a3, #00d4ff); color: white; background-size: 400% 400%; animation: gradientShift 15s ease infinite;">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"></script>
+	
+  <style>
+    @keyframes gradientShift {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    /* Phone Title Container */
+    #contact-phone-title {
+      display: flex;
+      justify-content: center;
+      margin-top: 80px;
+      margin-bottom: 100px; /* Extra spacing below */
+      cursor: pointer;
+    }
+
+    /* Phone Shape */
+    .phone-bg {
+      width: 500px; /* slightly larger */
+      height: 250px;
+      background: linear-gradient(145deg, #555, #222);
+      border-radius: 30px;
+      position: relative;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.5), inset 0 0 50px rgba(255,255,255,0.1);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+      flex-direction: column;
+    }
+
+    /* Camera notch */
+    .phone-bg::before {
+      content: "";
+      width: 14px;
+      height: 14px;
+      background: #aaa;
+      border-radius: 50%;
+      position: absolute;
+      top: 10px;
+      left: 20px;
+    }
+
+    /* Screen for letters */
+    .phone-screen {
+      width: 90%;
+      height: 60%;
+      background: #111;
+      border-radius: 15px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 12px;
+      flex-wrap: wrap;
+      padding: 10px;
+    }
+
+    /* Each letter styled like an app */
+    .phone-screen span {
+      width: 50px;
+      height: 50px;
+      font-weight: 800;
+      font-size: 2.2rem;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 12px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.6);
+      text-shadow: 1px 1px 8px rgba(0,0,0,0.7);
+    }
+
+    /* Different gradients for each letter */
+    .phone-screen span:nth-child(1) { background: linear-gradient(135deg, #ff6ec7, #7367f0); }
+    .phone-screen span:nth-child(2) { background: linear-gradient(135deg, #6ef0ff, #7367f0); }
+    .phone-screen span:nth-child(3) { background: linear-gradient(135deg, #ffba6e, #f07ab1); }
+    .phone-screen span:nth-child(4) { background: linear-gradient(135deg, #6effa3, #4f7cf0); }
+    .phone-screen span:nth-child(5) { background: linear-gradient(135deg, #f0ff6e, #f07ab1); }
+    .phone-screen span:nth-child(6) { background: linear-gradient(135deg, #ff6e6e, #7367f0); }
+    .phone-screen span:nth-child(7) { background: linear-gradient(135deg, #6eafff, #ff6ec7); }
+    .phone-screen span:nth-child(8) { background: linear-gradient(135deg, #a36eff, #6efff0); }
+    .phone-screen span:nth-child(9) { background: linear-gradient(135deg, #ff6ed1, #6eff90); }
+
+    .phone-screen span:hover {
+      transform: scale(1.3);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.8);
+    }
+
+    /* Reusable phone-card style for info and form */
+    .phone-card {
+      background: linear-gradient(145deg, #555, #222);
+      border-radius: 30px;
+      position: relative;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.5), inset 0 0 50px rgba(255,255,255,0.1);
+      padding: 2rem;
+      color: white;
+      transition: all 0.4s ease;
+      overflow: hidden;
+    }
+    .phone-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 16px 40px rgba(0,0,0,0.45), inset 0 0 60px rgba(255,255,255,0.15);
+    }
+
+    /* Realistic black camera for phone-card boxes */
+    .phone-card::before {
+      content: "";
+      width: 18px;
+      height: 18px;
+      background: radial-gradient(circle at 25% 25%, #555, #000);
+      border-radius: 50%;
+      position: absolute;
+      top: 15px;
+      left: 20px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+    }
+    .phone-card::after {
+      content: "";
+      width: 6px;
+      height: 6px;
+      background: rgba(255,255,255,0.3);
+      border-radius: 50%;
+      position: absolute;
+      top: 18px;
+      left: 23px;
+    }
+
+    /* Text Inputs inside phone-card */
+    .phone-card .form-control {
+      border: 1px solid #999;
+      border-radius: 12px;
+      padding: 12px 15px;
+      font-size: 16px;
+      font-weight: 500;
+      color: #222;
+      background: #f8f9fa;
+      box-shadow: inset 0 2px 6px rgba(0,0,0,0.1);
+      transition: all 0.3s ease;
+    }
+    .phone-card .form-control::placeholder { color: #555; }
+    .phone-card .form-control:focus {
+      outline: none;
+      background: #ffffff;
+      box-shadow: 0 0 12px rgba(123,47,247,0.6);
+      transform: scale(1.01);
+    }
+
+    .btn-send {
+      background: linear-gradient(90deg, #7367f0, #ff6ec7);
+      border: none;
+      border-radius: 12px;
+      color: white;
+      font-weight: 600;
+      transition: all 0.3s ease;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.25);
+    }
+    .btn-send:hover {
+      transform: scale(1.03);
+      box-shadow: 0 0 25px rgba(255,110,199,0.6);
+    }
+
+    .contact-icon {
+      font-size: 1.2rem;
+      margin-right: 10px;
+    }
+    .contact-icon-phone { color: #28a745; }
+    .contact-icon-email { color: #17a2b8; }
+    .contact-icon-linkedin { color: #0077b5; }
+
+    #contact h2 { margin-top: 80px; color: white; text-shadow: 0 0 10px rgba(0,0,0,0.5); }
+  </style>
+
+  <!-- Phone Title -->
+  <div id="contact-phone-title">
+    <div class="phone-bg">
+      <div class="phone-screen">
+        <span>C</span>
+        <span>O</span>
+        <span>N</span>
+        <span>T</span>
+        <span>A</span>
+        <span>C</span>
+        <span>T</span>
+        <span>M</span>
+        <span>E</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Contact Info and Form -->
+  <div class="container">
+    <div class="row align-items-center">
+      <!-- Left Side -->
+      <div class="col-md-5 mb-4 mb-md-0">
+        <div class="phone-card">
+          <h4 class="mb-4 text-center" style="font-weight: 600;">Contact Details</h4>
+          <p><i class="bi bi-telephone-fill contact-icon contact-icon-phone"></i> <strong>Phone:</strong> +1 (555) 123-4567</p>
+          <p><i class="bi bi-envelope-fill contact-icon contact-icon-email"></i> <strong>Email:</strong> aw3@gamil.edu</p> 
+          <p><i class="bi bi-linkedin contact-icon contact-icon-linkedin"></i> <strong>LinkedIn:</strong> <a href="#" class="contact-link" target="_blank">linkedin.com/in/yourprofile</a></p>
+        </div>
+      </div>
+
+      <!-- Right Side: Form -->
+      <div class="col-md-7">
+        <form class="phone-card">
+          <div class="mb-3">
+            <label class="form-label">Name</label>
+            <input type="text" class="form-control" placeholder="Your Name" required>
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Email</label>
+            <input type="email" class="form-control" placeholder="you@example.com" required>
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Message</label>
+            <textarea class="form-control" rows="5" placeholder="Write your message here..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-send w-100 py-2">
+            <i class="bi bi-send-fill me-1"></i> Send Message
+          </button>
         </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Phone Ring Animation -->
+  <script>
+    const phoneTitle = document.getElementById("contact-phone-title");
+    gsap.set(phoneTitle, { transformOrigin: "center center" });
+
+    phoneTitle.addEventListener("click", () => {
+      gsap.set(phoneTitle, { x: 0, y: 0, rotation: 0 });
+      gsap.to(phoneTitle, {
+        duration: 0.08,
+        x: -5,
+        y: -2,
+        rotation: 2,
+        yoyo: true,
+        repeat: 10,
+        ease: "power1.inOut",
+        onComplete: () => {
+          gsap.to(phoneTitle, { x: 0, y: 0, rotation: 0, duration: 0.2, ease: "power1.out" });
+        }
+      });
+    });
+  </script>
+</section>
+
+
+
+
+
+<!-- Extras Section -->
+<section id="extra" style="
+    background: linear-gradient(135deg, #6a0dad, #1e90ff);
+    color:white; 
+    padding:100px 0; 
+    font-family:'Segoe UI', sans-serif;
+    min-height: 100vh; /* full viewport height */
+">
+    <div class="container text-center">
+        <h2 class="mb-4" style="font-size:2.5rem;">Extras</h2>
+        <p style="font-size:1.3rem; max-width:800px; margin:auto;">
+            Do you think you have what it takes to become a <strong>Mathemagician</strong>? 
+            Then I dare you to <strong>Ace my quizzes!</strong>
+        </p>
+
+        <!-- Quiz Cards -->
+        <div style="display:flex; flex-wrap:wrap; justify-content:center; margin-top:50px; gap:30px;">
+
+            <!-- Calculus (Easiest) -->
+            <div class="quiz-card" id="calculus-card" onclick="startQuiz('calculus')">
+                <h3>Quiz 1: Calculus</h3>
+                <p>Start your journey! The easiest quiz to warm up your brain.</p>
+            </div>
+
+            <!-- Probability (Medium) -->
+            <div class="quiz-card" id="probability-card" onclick="startQuiz('probability')">
+                <h3>Quiz 2: Probability</h3>
+                <p>Test your luck and logic. Medium difficulty.</p>
+            </div>
+
+            <!-- ODEs / PDEs (Hardest) -->
+            <div class="quiz-card" id="odes-card" onclick="startQuiz('odes')">
+                <h3>Quiz 3: ODEs / PDEs</h3>
+                <p>The ultimate challenge! Can you solve these advanced problems?</p>
+            </div>
+
+        </div>
+
+        <!-- Quiz Container -->
+        <div id="quiz-container" style="display:none; margin-top:50px; max-width:700px; margin:auto; text-align:left;">
+            <h3 id="quiz-title" style="color:#00d4ff;"></h3>
+            <p id="question"></p>
+
+            <input type="text" id="answer-input" placeholder="Type your answer" style="padding:10px; width:100%; margin-bottom:10px; display:none; border-radius:5px; border:none;">
+
+            <div id="mc-options" style="margin-bottom:10px;"></div>
+
+            <button id="submit-btn" style="padding:10px 15px; background:#00d4ff; color:#000; border:none; border-radius:5px; cursor:pointer;">Submit</button>
+            <button id="retake-btn" style="padding:10px 15px; background:#ff4c4c; color:#fff; border:none; border-radius:5px; display:none; margin-left:10px; cursor:pointer;" onclick="retakeQuiz()">Retake Quiz</button>
+
+            <p id="feedback" style="margin-top:15px; font-weight:bold;"></p>
+        </div>
     </div>
 </section>
 
-<!-- Extras Section -->
-<section id="extra">
-    <div class="container text-center d-flex flex-column justify-content-start align-items-center" style="height: 100vh; padding-top: 80px;">
-        <h2 class="mb-4">Extras</h2>
-        <ul class="list-unstyled" style="font-size: 1.2rem;">
-            <li>🔗 <a href="https://github.com/yourusername" style="color:#fff;">GitHub Repositories</a></li>
-            <li>📄 <a href="files/CV.pdf" style="color:#fff;">Download My CV</a></li>
-            <li>✍️ <a href="#" style="color:#fff;">Read My Blog</a></li>
-        </ul>
-    </div>
-</section>
+<style>
+/* ==== Quiz Card Styles ==== */
+.quiz-card {
+    color:white;
+    width:250px;
+    padding:25px;
+    border-radius:15px;
+    cursor:pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+    font-family:'Comic Sans MS', cursive, sans-serif;
+    font-weight:bold;
+    text-align:center;
+    box-shadow:0 5px 15px rgba(0,0,0,0.3);
+}
+
+#calculus-card {
+    background: linear-gradient(135deg, #28a745, #85e085);
+}
+
+#probability-card {
+    background: linear-gradient(135deg, #ffc107, #ffe066);
+}
+
+#odes-card {
+    background: linear-gradient(135deg, #dc3545, #e27b7b);
+}
+
+.quiz-card:hover {
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+}
+
+.quiz-card h3 {
+    margin-bottom:10px;
+}
+
+.quiz-card p {
+    font-size:0.95rem;
+}
+</style>
+
+<script>
+const quizzes = {
+    calculus: {
+        title: "Quiz 1: Calculus",
+        type: "text",
+        questions: [
+            { q: "Derivative of x²?", a: "2x" },
+            { q: "Derivative of sin(x)?", a: "cosx" },
+            { q: "Integral of 2x dx?", a: "x^2+c" },
+            { q: "Derivative of e^x?", a: "e^x" },
+            { q: "Integral of 1/x dx?", a: "ln|x|+c" },
+            { q: "Derivative of ln(x)?", a: "1/x" },
+            { q: "Integral of cos(x) dx?", a: "sinx+c" },
+            { q: "Derivative of tan(x)?", a: "sec^2x" },
+            { q: "Integral of 3x² dx?", a: "x^3+c" },
+            { q: "Derivative of x³?", a: "3x^2" }
+        ]
+    },
+    probability: {
+        title: "Quiz 2: Probability Theory",
+        type: "mc",
+        questions: [
+            { q:"Probability of head in fair coin?", options:["0.25","0.5","0.75","1"], a:"0.5" },
+            { q:"Probability of 2 dice summing to 7?", options:["1/6","1/12","1/8","1/36"], a:"1/6" },
+            { q:"Complement of event A?", options:["P(A)","1-P(A)","0","P(A)^2"], a:"1-P(A)" },
+            { q:"P(A∩B) for independent?", options:["P(A)+P(B)","P(A)P(B)","P(A)/P(B)","P(A)-P(B)"], a:"P(A)P(B)" },
+            { q:"Expected value of X?", options:["Most likely X","Mean of X","Variance of X","Median X"], a:"Mean of X" },
+            { q:"Variance measures?", options:["Spread","Average","Sum","Product"], a:"Spread" },
+            { q:"Probability of at least 1 success in n trials?", options:["Use complement rule","Sum rule","Product rule","None"], a:"Use complement rule" },
+            { q:"P(A∪B)?", options:["P(A)+P(B)","P(A)+P(B)-P(A∩B)","P(A)P(B)","1-P(A∩B)"], a:"P(A)+P(B)-P(A∩B)" },
+            { q:"P(rolling even number on dice)?", options:["1/3","1/2","1/6","2/3"], a:"1/2" },
+            { q:"Sum of probabilities for all outcomes?", options:["0","1","Depends","2"], a:"1" }
+        ]
+    },
+    odes: {
+        title: "Quiz 3: ODEs / PDEs",
+        type: "mc",
+        questions: [
+            { q: "dy/dx + y = 0. Solution?", options:["y = e^x","y = e^-x","y = x","y = -x"], a: "y = e^-x" },
+            { q: "∂u/∂t = k ∂²u/∂x². Equation type?", options:["Wave","Heat","Laplace","Poisson"], a:"Heat" },
+            { q: "dy/dx = ky. Solution?", options:["y = kx","y = e^(kx)","y = ln(kx)","y = 1/kx"], a:"y = e^(kx)" },
+            { q: "∂²u/∂x² + ∂²u/∂y² = 0. Equation type?", options:["Wave","Laplace","Heat","Euler"], a:"Laplace" },
+            { q: "dy/dx = sin(x). Solution?", options:["y=-cos(x)+c","y=cos(x)+c","y=xsin(x)","y=sin(x)x"], a:"y=-cos(x)+c" },
+            { q: "dy/dx + P(x)y = Q(x)?", options:["Linear ODE","Nonlinear ODE","Separable ODE","Exact ODE"], a:"Linear ODE" },
+            { q: "∂²u/∂t² = c²∂²u/∂x²?", options:["Heat","Wave","Laplace","Poisson"], a:"Wave" },
+            { q: "dy/dx = xy. Type?", options:["Separable ODE","Exact ODE","Linear ODE","Homogeneous ODE"], a:"Separable ODE" },
+            { q: "du/dt = ku, k>0. Solution?", options:["u = kt","u = e^(kt)","u = ln(k)","u = 1/k"], a:"u = e^(kt)" },
+            { q: "∂u/∂t - D ∂²u/∂x² = 0. Equation type?", options:["Heat","Wave","Laplace","Poisson"], a:"Heat" }
+        ]
+    }
+};
+
+// ==== Quiz Logic ====
+let currentQuiz = null, currentIndex=0, score=0;
+const quizContainer = document.getElementById("quiz-container");
+const quizTitleEl = document.getElementById("quiz-title");
+const questionEl = document.getElementById("question");
+const answerInputEl = document.getElementById("answer-input");
+const mcOptionsEl = document.getElementById("mc-options");
+const feedbackEl = document.getElementById("feedback");
+const submitBtn = document.getElementById("submit-btn");
+const retakeBtn = document.getElementById("retake-btn");
+
+function startQuiz(name){
+    currentQuiz = quizzes[name];
+    currentIndex = 0;
+    score = 0;
+    quizContainer.style.display = "block";
+    retakeBtn.style.display = "none";
+    submitBtn.style.display = "inline-block";
+    quizTitleEl.textContent = currentQuiz.title;
+    loadQuestion();
+}
+
+
+function loadQuestion(){
+    if(currentIndex < currentQuiz.questions.length){
+        const q = currentQuiz.questions[currentIndex];
+        questionEl.textContent = `Q${currentIndex+1}: ${q.q}`;
+        feedbackEl.textContent = "";
+        if(currentQuiz.type === "text"){
+            answerInputEl.style.display = "block";
+            mcOptionsEl.style.display = "none";
+            answerInputEl.value = "";
+        } else {
+            answerInputEl.style.display = "none";
+            mcOptionsEl.style.display = "block";
+            mcOptionsEl.innerHTML = "";
+            q.options.forEach(opt=>{
+                const btn = document.createElement("button");
+                btn.textContent = opt;
+                btn.style.margin = "5px";
+                btn.style.padding = "5px 10px";
+                btn.onclick = ()=>checkAnswer(opt);
+                mcOptionsEl.appendChild(btn);
+            });
+        }
+    } else {
+        questionEl.textContent = "🎉 Quiz Completed!";
+        answerInputEl.style.display = "none";
+        mcOptionsEl.style.display = "none";
+        retakeBtn.style.display = "inline-block";
+        submitBtn.style.display = "none";
+        feedbackEl.textContent = `Your score: ${score}/${currentQuiz.questions.length} - ${getFeedback(score)}`;
+    }
+}
+
+function checkAnswer(userAnswer){
+    const correctAnswer = currentQuiz.questions[currentIndex].a;
+    if(userAnswer.trim().toLowerCase().replace(/\s+/g,'') === correctAnswer.trim().toLowerCase().replace(/\s+/g,'')){
+        score++;
+        feedbackEl.textContent = "✅ Correct!";
+    } else {
+        feedbackEl.textContent = `❌ Wrong! Correct answer: ${correctAnswer}`;
+    }
+    currentIndex++;
+    setTimeout(loadQuestion, 800);
+}
+
+submitBtn.addEventListener("click", ()=>{
+    const userAnswer = answerInputEl.value;
+    if(userAnswer.trim() === "") return;
+    checkAnswer(userAnswer);
+});
+
+function retakeQuiz(){
+    startQuiz(Object.keys(quizzes).find(k=>quizzes[k]===currentQuiz));
+}
+
+function getFeedback(score){
+    if(score<=4) return "How could this happen! This is literally Kindergarten math 😅";
+    else if(score<=7) return "Eh, It's okay, not impressed 😐";
+    else if(score<=9) return "Not bad, not good either, but no bad 😏";
+    else return "You did it! I always had faith in you 😉";
+}
+</script>
+
+
+
+
+
+
 
 
 <footer>
