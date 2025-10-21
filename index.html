@@ -450,14 +450,14 @@
            <div class="card-content">
                <div class="job">
                    <h4>Podium Education | Evaluation Specialist | Part-Time</h4>
-                   <p>September 2025 - Present</p>
+                   <p>(September 2025 - Present)</p>
                    <ul>
                        <li>Evaluated over 200 weekly Data Analytics participants’ Excel and Tableau projects.</li>
                    </ul>
                </div>
                <div class="job mt-3">
                    <h4>The Global Career Accelerator | Data Analyst Trainee | Remote</h4>
-                   <p>May 2025 - Present</p>
+                   <p>(May 2025 - Present)</p>
                    <ul>
                        <li>Conducted Excel analysis with PivotTables and visualizations.</li>
                        <li>Created dashboards and reports in Tableau.</li>
@@ -468,7 +468,7 @@
                </div>
                <div class="job mt-3">
                    <h4>Office & IT Assistant | Department of Mathematical Sciences, Kent State University</h4>
-                   <p>February 2025 - Present</p>
+                   <p>(February 2025 - Present)</p>
                    <ul>
                        <li>Managed front desk operations and provided administrative/IT support.</li>
                        <li>Handled Excel reports for data entry, tracking, and analysis.</li>
@@ -1097,23 +1097,27 @@ animateLetterColors();
 
     #contact h2 { margin-top: 80px; color: white; text-shadow: 0 0 10px rgba(0,0,0,0.5); }
 
-/* Mobile adjustments for last row */
+/* Mobile adjustments */
 @media (max-width: 576px) {
-  .phone-screen .last-row {
-    display: flex;
+  .phone-screen {
+    flex-wrap: wrap;          
+    justify-content: center;  
     gap: 8px;
-    width: 100%;
-    justify-content: center; /* centers M and E */
   }
 
-  /* Ensure M and E have the same box size */
-  .phone-screen .last-row span {
-    width: 40px;
+  .phone-screen span {
+    width: 40px;              
     height: 40px;
     font-size: 1.6rem;
-    display: flex;
+    display: flex;            
     justify-content: center;
     align-items: center;
+  }
+
+  /* Push last two letters (M and E) to next row */
+  .phone-screen span:nth-last-child(2)::before {
+    content: "";
+    flex-basis: 100%;
   }
 }
 
@@ -1469,6 +1473,7 @@ function getFeedback(score){
 </script>
 </body>
 </html>
+
 
 
 
