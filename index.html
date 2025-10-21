@@ -1097,32 +1097,23 @@ animateLetterColors();
 
     #contact h2 { margin-top: 80px; color: white; text-shadow: 0 0 10px rgba(0,0,0,0.5); }
 
-/* Mobile adjustments */
+/* Mobile adjustments for last row */
 @media (max-width: 576px) {
-  .phone-screen {
-    flex-wrap: wrap;          /* allow wrapping */
-    justify-content: center;  /* center letters */
+  .phone-screen .last-row {
+    display: flex;
     gap: 8px;
+    width: 100%;
+    justify-content: center; /* centers M and E */
   }
 
-  .phone-screen span {
-    width: 40px;              /* slightly smaller letters */
+  /* Ensure M and E have the same box size */
+  .phone-screen .last-row span {
+    width: 40px;
     height: 40px;
     font-size: 1.6rem;
-    display: flex;            
+    display: flex;
     justify-content: center;
     align-items: center;
-  }
-
-  /* Insert a full-width spacer before last two letters */
-  .phone-screen span:nth-last-child(2)::before {
-    content: "";
-    flex-basis: 100%;         /* pushes last two letters to next row */
-  }
-
- /* Slightly adjust M position */
-  .phone-screen span:nth-last-child(2) {
-    transform: translateX(-1px);  /* move M slightly left */
   }
 }
 
@@ -1140,6 +1131,7 @@ animateLetterColors();
         <span>A</span>
         <span>C</span>
         <span>T</span>
+		<span class="last-row">
         <span>M</span>
         <span>E</span>
       </div>
@@ -1478,6 +1470,7 @@ function getFeedback(score){
 </script>
 </body>
 </html>
+
 
 
 
