@@ -501,6 +501,59 @@
    </div>
 </section>
 
+/* RESUME SECTION RESPONSIVE ADJUSTMENTS */
+
+/* Split-screen / tablets: 481px - 768px */
+@media only screen and (max-width: 768px) and (min-width: 481px) {
+    #resume h1 {
+        font-size: 2.5rem; /* slightly smaller than desktop */
+        margin-top: 60px;  /* adjust top spacing */
+    }
+
+    .resume-card {
+        padding: 30px;      /* slightly smaller padding */
+    }
+
+    .card-header {
+        font-size: 1.5rem; /* reduce header size */
+    }
+
+    .card-content p, .card-content ul {
+        font-size: 0.95rem; /* slightly smaller text */
+    }
+}
+
+/* Phones: max-width 480px */
+@media only screen and (max-width: 480px) {
+    #resume h1 {
+        font-size: 2rem; /* smaller for phone */
+        margin-top: 40px;
+    }
+
+    .resume-card {
+        width: 95%;       /* fit smaller screens */
+        padding: 20px;    /* smaller padding */
+    }
+
+    .card-header {
+        font-size: 1.3rem;
+    }
+
+    .card-content p, .card-content ul {
+        font-size: 0.85rem;
+    }
+
+    /* Floating background formulas smaller on phones */
+    .edu-bg span.formula {
+        font-size: 1.2rem;
+    }
+
+    .edu-bg span.formula:nth-child(n+31) {
+        font-size: 1rem;
+    }
+}
+	
+	
 <style>
 /* Book-like Resume Cards */
 .resume-card {
@@ -1423,6 +1476,7 @@ function getFeedback(score){
 </script>
 </body>
 </html>
+
 
 
 
