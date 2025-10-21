@@ -1058,17 +1058,16 @@ animateLetterColors();
     font-size: 1.6rem;
   }
 
- /* Wrap last two letters into a small inline-flex container */
-  .phone-screen span:nth-last-child(2),
-  .phone-screen span:nth-last-child(1) {
-    display: inline-flex;       /* keep M and E together */
+ /* Force ME onto next line as a single row */
+  .phone-screen span:nth-last-child(2) {
+    flex-basis: 100%;          /* push M and E to new row */
+    display: inline-flex;
     justify-content: center;
-    align-items: center;
+    gap: 8px;                  /* spacing between M and E */
   }
 
-  /* Force a line break before M */
-  .phone-screen span:nth-last-child(2) {
-    flex-basis: 100%;
+  .phone-screen span:nth-last-child(1) {
+    display: inline-flex;      /* keep E next to M */
   }
 }
   
@@ -1423,6 +1422,7 @@ function getFeedback(score){
 </script>
 </body>
 </html>
+
 
 
 
