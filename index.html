@@ -1041,6 +1041,20 @@ animateLetterColors();
     .contact-icon-linkedin { color: #0077b5; }
 
     #contact h2 { margin-top: 80px; color: white; text-shadow: 0 0 10px rgba(0,0,0,0.5); }
+
+	/* Responsive adjustment for smaller screens */
+@media (max-width: 576px) { /* phones and small devices */
+  .phone-bg {
+    width: 300px;   /* reduce phone container size */
+    height: 150px;
+  }
+  .phone-screen span {
+    width: 35px;    /* smaller letter "apps" */
+    height: 35px;
+    font-size: 1.5rem;
+  }
+}
+  
   </style>
 
   <!-- Phone Title -->
@@ -1392,6 +1406,7 @@ function getFeedback(score){
 </script>
 </body>
 </html>
+
 
 
 
