@@ -1119,6 +1119,12 @@ animateLetterColors();
     content: "";
     flex-basis: 100%;
   }
+
+  /* Add a little gap specifically between M and E */
+  .phone-screen span:nth-last-child(2),
+  .phone-screen span:nth-last-child(1) {
+    margin-right: 4px;  /* small space between M and E */
+  }
 }
 
   
@@ -1473,6 +1479,7 @@ function getFeedback(score){
 </script>
 </body>
 </html>
+
 
 
 
