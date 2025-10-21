@@ -1046,16 +1046,24 @@ animateLetterColors();
 
 	/* Mobile adjustments */
    @media (max-width: 576px) {
-   .phone-screen {
-    flex-wrap: nowrap;        /* prevent letters from wrapping */
-    justify-content: center;  /* center the whole word */
-    gap: 10px;                 /* reduce spacing a bit */
+  .phone-screen {
+    flex-wrap: wrap;          /* allow wrapping */
+    justify-content: center;  /* center both rows */
+    gap: 8px;
   }
 
   .phone-screen span {
-    width: 65px;              /* slightly smaller letters */
-    height: 65px;
-    font-size: 1.7rem;        /* smaller font for mobile */
+    width: 40px;              /* slightly smaller letters */
+    height: 40px;
+    font-size: 1.6rem;
+  }
+
+  /* Force last two letters (M and E) onto a new line */
+  .phone-screen span:nth-last-child(2),
+  .phone-screen span:nth-last-child(1) {
+    flex-basis: 100%;
+    display: flex;
+    justify-content: center;
   }
 }
   
@@ -1410,6 +1418,7 @@ function getFeedback(score){
 </script>
 </body>
 </html>
+
 
 
 
