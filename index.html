@@ -1100,31 +1100,24 @@ animateLetterColors();
 /* Mobile adjustments */
 @media (max-width: 576px) {
   .phone-screen {
-    flex-wrap: wrap;          
-    justify-content: center;  
+    flex-wrap: wrap;          /* allow wrapping */
+    justify-content: center;  /* center letters */
     gap: 8px;
   }
 
   .phone-screen span {
-    width: 40px;              
+    width: 40px;              /* slightly smaller letters */
     height: 40px;
     font-size: 1.6rem;
     display: flex;            
     justify-content: center;
     align-items: center;
   }
-   
-  /* Force last two letters (M and E) onto a new row and center them */
-  .phone-screen span:nth-last-child(2) {
-    flex-basis: 100%;         /* pushes M and E to next row */
-    display: flex;            
-    justify-content: center;  /* centers both letters together */
-    gap: 8px;                 /* spacing between M and E */
-  }
 
-  /* Remove the pseudo-element */
+  /* Insert a full-width spacer before last two letters */
   .phone-screen span:nth-last-child(2)::before {
-    content: none;
+    content: "";
+    flex-basis: 100%;         /* pushes last two letters to next row */
   }
 }
 
@@ -1480,6 +1473,7 @@ function getFeedback(score){
 </script>
 </body>
 </html>
+
 
 
 
