@@ -698,23 +698,23 @@
     text-align: center;
 }
 
-/* SCALE PALETTE FOR TABLETS/PHONES */
-@media only screen and (max-width: 768px) {
+/* SCALE PALETTE FOR TABLETS */
+@media only screen and (max-width: 768px) and (min-width: 481px) {
     .palette-container {
-        transform: scale(0.30);
+        transform: scale(0.6);        /* good for split-screen or tablets */
         transform-origin: top center;
-        margin-left: -230px; /* move more left */
-
+        margin-left: -170px;          /* push slightly left */
     }
 }
 
+/* SCALE PALETTE FOR PHONES */
 @media only screen and (max-width: 480px) {
     .palette-container {
-        transform: scale(0.40);
+        transform: scale(0.40);       /* shrink more for phones */
         transform-origin: top center;
+        margin-left: -60px;           /* shift left so fully visible */
     }
 }
-
 .palette-bg {
     position: relative;
     width: 900px;
@@ -1048,13 +1048,13 @@ animateLetterColors();
    .phone-screen {
     flex-wrap: nowrap;        /* prevent letters from wrapping */
     justify-content: center;  /* center the whole word */
-    gap: 8px;                 /* reduce spacing a bit */
+    gap: 10px;                 /* reduce spacing a bit */
   }
 
   .phone-screen span {
-    width: 40px;              /* slightly smaller letters */
-    height: 46px;
-    font-size: 1.6rem;        /* smaller font for mobile */
+    width: 45px;              /* slightly smaller letters */
+    height: 45px;
+    font-size: 1.7rem;        /* smaller font for mobile */
   }
 }
   
@@ -1409,6 +1409,7 @@ function getFeedback(score){
 </script>
 </body>
 </html>
+
 
 
 
