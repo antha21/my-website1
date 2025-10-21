@@ -699,12 +699,11 @@
 }
 
 /* SCALE PALETTE FOR TABLETS/PHONES */
-@media only screen and (max-width: 414px) {
+@media only screen and (max-width: 768px) {
     .palette-container {
-        transform: scale(0.35); /* shrink more to fit small screens */
-    	transform-origin: top left;    /* scale from top-left corner instead of center */
-        margin-left: 0;                /* no positive margin pushing it right */
-        max-width: none;               /* allow full width */
+        transform: scale(0.6);
+        transform-origin: top center;
+        margin-left: -120px; /* move more left */
     }
 }
 
@@ -1393,6 +1392,7 @@ function getFeedback(score){
 </script>
 </body>
 </html>
+
 
 
 
