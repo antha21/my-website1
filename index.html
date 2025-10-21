@@ -1043,16 +1043,16 @@ animateLetterColors();
 
     #contact h2 { margin-top: 80px; color: white; text-shadow: 0 0 10px rgba(0,0,0,0.5); }
 
-	/* Responsive adjustment for smaller screens */
-@media (max-width: 576px) { /* phones and small devices */
-  .phone-bg {
-    width: 350px;   /* reduce phone container size */
-    height: 200px;
+	@media (max-width: 480px) { /* phones */
+  #contact-phone-title .phone-bg {
+    width: 320px;    /* slightly smaller container */
+    height: 160px;
   }
-  .phone-screen span {
-    width: 42px;    /* smaller letter "apps" */
-    height: 42px;
-    font-size: 1.8rem;
+
+  #contact-phone-title .phone-screen span {
+    width: 36px;     /* smaller “app” letters */
+    height: 36px;
+    font-size: 1.6rem;
   }
 }
   
@@ -1407,6 +1407,7 @@ function getFeedback(score){
 </script>
 </body>
 </html>
+
 
 
 
