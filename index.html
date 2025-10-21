@@ -698,23 +698,24 @@
     text-align: center;
 }
 
-/* SCALE PALETTE FOR TABLETS */
+/* SCALE PALETTE FOR TABLETS (split-screen) */
 @media only screen and (max-width: 768px) and (min-width: 481px) {
     .palette-container {
-        transform: scale(0.6);        /* good for split-screen or tablets */
+        transform: scale(0.6);
         transform-origin: top center;
-        margin-left: -170px;          /* push slightly left */
+        margin-left: -170px; /* your split-screen look */
     }
 }
 
 /* SCALE PALETTE FOR PHONES */
 @media only screen and (max-width: 480px) {
     .palette-container {
-        transform: scale(0.40);       /* shrink more for phones */
+        transform: scale(0.40);
         transform-origin: top center;
-        margin-left: -60px;           /* shift left so fully visible */
+        margin-left: -230px; /* exact value you had for phones */
     }
 }
+
 .palette-bg {
     position: relative;
     width: 900px;
@@ -1052,8 +1053,8 @@ animateLetterColors();
   }
 
   .phone-screen span {
-    width: 45px;              /* slightly smaller letters */
-    height: 45px;
+    width: 65px;              /* slightly smaller letters */
+    height: 65px;
     font-size: 1.7rem;        /* smaller font for mobile */
   }
 }
@@ -1409,6 +1410,7 @@ function getFeedback(score){
 </script>
 </body>
 </html>
+
 
 
 
