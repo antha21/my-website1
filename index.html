@@ -701,9 +701,11 @@
 /* SCALE PALETTE FOR TABLETS/PHONES */
 @media only screen and (max-width: 768px) {
     .palette-container {
-        transform: scale(0.6);
-        transform-origin: top center;
-        margin-left: -190px; /* move more left */
+        transform: scale(0.6) translateX(-50%);
+    	transform-origin: top center;
+    	position: relative;
+   	 	left: 50%;
+    	margin-left: 0;
     }
 }
 
@@ -1392,6 +1394,7 @@ function getFeedback(score){
 </script>
 </body>
 </html>
+
 
 
 
