@@ -1112,22 +1112,14 @@ animateLetterColors();
   }
 
   .phone-screen span {
-    width: 40px;              
-    height: 40px;
-    font-size: 1.6rem;
-    display: flex;            
-    justify-content: center;
-    align-items: center;
+  display: grid;             /* use grid instead of flex */
+  place-items: center;       /* centers both horizontally & vertically */
   }
  /* Push last two letters (M and E) to next row */
   .phone-screen span:nth-last-child(2)::before {
     content: "";
     flex-basis: 100%;
   }
-
-  /* Manually adjust M inside its box */
-  .phone-screen span:nth-last-child(2) {
-    transform: translateX(-14px); /* move M slightly left */
 }
 
   
@@ -1144,7 +1136,7 @@ animateLetterColors();
         <span>A</span>
         <span>C</span>
         <span>T</span>
-		<span><span class="letter">M</span></span>
+		<span>M</span>
         <span>E</span>
       </div>
     </div>
@@ -1482,6 +1474,7 @@ function getFeedback(score){
 </script>
 </body>
 </html>
+
 
 
 
