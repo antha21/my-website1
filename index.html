@@ -1111,11 +1111,15 @@ animateLetterColors();
     gap: 8px;
   }
 
-  .phone-screen span {
-  display: grid;             /* use grid instead of flex */
-  place-items: center;       /* centers both horizontally & vertically */
+ .phone-screen span {
+    width: 40px;              
+    height: 40px;
+    font-size: 1.6rem;
+    display: grid;           
+    place-items: center;      /* centers letters */
   }
- /* Force M and E to the next row as a group */
+
+  /* Force M and E to the next row as a group */
   .phone-screen .me-group {
     display: flex;
     gap: 8px;                 /* space between M and E */
@@ -1481,6 +1485,7 @@ function getFeedback(score){
 </script>
 </body>
 </html>
+
 
 
 
