@@ -1119,17 +1119,15 @@ animateLetterColors();
     justify-content: center;
     align-items: center;
   }
-
-  /* Push last two letters (M and E) to next row */
+ /* Push last two letters (M and E) to next row */
   .phone-screen span:nth-last-child(2)::before {
     content: "";
     flex-basis: 100%;
   }
 
-  /* Add a little gap specifically between M and E */
+  /* Manually adjust M inside its box */
   .phone-screen span:nth-last-child(2) {
-    margin-right: 8px;  /* small space between M and E */
-  }
+    transform: translateX(-4px); /* move M slightly left */
 }
 
   
@@ -1484,6 +1482,7 @@ function getFeedback(score){
 </script>
 </body>
 </html>
+
 
 
 
