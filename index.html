@@ -1097,33 +1097,37 @@ animateLetterColors();
 
     #contact h2 { margin-top: 80px; color: white; text-shadow: 0 0 10px rgba(0,0,0,0.5); }
 
-	/* Mobile adjustments */
-   @media (max-width: 576px) {
+/* Mobile adjustments */
+@media (max-width: 576px) {
   .phone-screen {
-    flex-wrap: wrap;          /* allow wrapping */
-    justify-content: center;  /* center both rows */
+    flex-wrap: wrap;          
+    justify-content: center;  
     gap: 8px;
   }
 
   .phone-screen span {
-    width: 40px;              /* slightly smaller letters */
+    width: 40px;              
     height: 40px;
     font-size: 1.6rem;
-	display: flex;            /* ensure letters are centered */
+    display: flex;            
     justify-content: center;
     align-items: center;
   }
-	   
-  /* Force last two letters (M and E) to a new row but next to each other */
+   
+  /* Force last two letters (M and E) onto a new row and center them */
   .phone-screen span:nth-last-child(2) {
-    margin-left: 0;           /* reset any spacing issues */
+    flex-basis: 100%;         /* pushes M and E to next row */
+    display: flex;            
+    justify-content: center;  /* centers both letters together */
+    gap: 8px;                 /* spacing between M and E */
   }
 
+  /* Remove the pseudo-element */
   .phone-screen span:nth-last-child(2)::before {
-    content: "";
-    flex-basis: 100%;         /* pushes last two letters onto a new row */
+    content: none;
   }
 }
+
   
   </style>
 
@@ -1476,6 +1480,7 @@ function getFeedback(score){
 </script>
 </body>
 </html>
+
 
 
 
