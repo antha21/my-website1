@@ -1056,18 +1056,16 @@ animateLetterColors();
     width: 40px;              /* slightly smaller letters */
     height: 40px;
     font-size: 1.6rem;
-  }
-
- /* Force ME onto next line as a single row */
-  .phone-screen span:nth-last-child(2) {
-    flex-basis: 100%;          /* push M and E to new row */
-    display: inline-flex;
+	display: flex;            /* ensure letters are centered */
     justify-content: center;
-    gap: 8px;                  /* spacing between M and E */
+    align-items: center;
   }
-
-  .phone-screen span:nth-last-child(1) {
-    display: inline-flex;      /* keep E next to M */
+  /* Force last two letters (M and E) onto a new row */
+  .phone-screen span:nth-last-child(2) {
+    flex-basis: 100%;         /* pushes M and E to next row */
+    display: flex;            /* keep flex layout for alignment */
+    justify-content: center;  /* center M and E together */
+    gap: 8px;                 /* spacing between M and E */
   }
 }
   
@@ -1422,6 +1420,7 @@ function getFeedback(score){
 </script>
 </body>
 </html>
+
 
 
 
