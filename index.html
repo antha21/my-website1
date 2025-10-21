@@ -1120,9 +1120,9 @@ animateLetterColors();
     flex-basis: 100%;         /* pushes last two letters to next row */
   }
 
-  /* Slightly nudge M to the left */
+ /* Slightly adjust M position */
   .phone-screen span:nth-last-child(2) {
-    padding-left: 2px;        /* adjust until M looks centered */
+    transform: translateX(-1px);  /* move M slightly left */
   }
 }
 
@@ -1478,6 +1478,7 @@ function getFeedback(score){
 </script>
 </body>
 </html>
+
 
 
 
